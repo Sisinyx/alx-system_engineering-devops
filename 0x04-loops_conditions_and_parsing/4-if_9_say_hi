@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# Display "Best School" 10 times and displays "Hi" for the 9th iteration
 
-counter=1
-while [ $counter -le 10 ]
-do
-    echo "Best School"
-    if [[ "$counter" == '9' ]]
-    then
-        echo "Hi"
-    fi
-    ((counter++))
+i=0
+
+while [ $i -lt 10 ]; do
+      echo "Best School"
+      if [ $i -eq 8 ]; then
+	  echo "Hi"
+      fi
+      i=$((i+1))
 done
